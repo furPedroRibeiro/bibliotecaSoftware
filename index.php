@@ -174,7 +174,7 @@ include('biblioteca.php');
             $_SESSION['adm'] = $user->adm;
             header('location: pageMain.php');
           } else{
-            header('location: adm.php;');
+            header('location: pageAdm.html');
           }
         }
     }

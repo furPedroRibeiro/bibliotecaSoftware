@@ -87,12 +87,12 @@
     }
   }
   function CadastrarGenero($nome){
-    $sql = 'INSERT INTO genero VALUES (null,"'.$nome.'")';
-    $res = $GLOBALS['conn']->query($sql);
+    $sql = 'INSERT INTO genero (nome) VALUES ("'.$nome.'")';
+    $res  = $GLOBALS['conn']->query($sql);
     if($res){
       echo "Gênero cadastrado";
     } else {
-      echo "Erro ao cadastrar";
+      echo "Erro ao cadastrar"; 
     }
   }
   function ExcluirGenero($cd){
